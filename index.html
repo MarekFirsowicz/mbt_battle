@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Battle Tank</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+	<div id="controls">	
+		<div class="player player_1">
+			<div class="ammo"></div>
+		</div>	
+		<button id="pause_game" class="btn"><i class="fa-solid fa-circle-pause"></i></button>
+		<div class="player player_2">
+			<div class="ammo"></div>
+		</div>	
+	</div>
+
+		
+	<canvas id="canvas1"></canvas>
+
+	<div id="main_img">
+		<button id="start_game" class="btn"><i class="fa-solid fa-circle-play"></i></button>
+	</div>
+	
+	
+
+	<div class="assets">
+		<!-- images -->
+		<img id="tileset" src="images/map_tileset.png" alt="terrain">
+		<img id="tank_green" src="vehicles/towerDefense_tile268.png" alt="tank">
+		<img id="turret_green" src="vehicles/towerDefense_tile291.png" alt="tank turret">
+		<img id="tank_grey" src="vehicles/towerDefense_tile269.png" alt="tank">
+		<img id="turret_grey" src="vehicles/towerDefense_tile292.png" alt="tank turret">
+		<img id="turret_ag" src="vehicles/towerDefense_tile249.png" alt="ag turret">
+		<img id="tower_hmg" src="vehicles/towr_hmg.png" alt="tower hmg">
+		<img id="tower_base" src="vehicles/tower_base.png" alt="tower base">
+		
+
+
+		<!-- audio -->
+		<audio id="cannon_sound" src="./audio/cannon_fire.ogg" type="audio/ogg"></audio>
+		<audio id="hmg_sound" src="./audio/hmg.mp3" type="audio/mpeg"></audio>
+		<audio id="engine_sound" src="./audio/engine_heavy_slow_loop.ogg" type="audio/ogg"></audio>
+		<audio id="destruction_sound" src="./audio/destruction.flac" type="audio/flac"></audio>
+		
+	</div>
+
+	<script src="index.js" type="module"></script>
+</body>
+</html>
+		<!-- <button id="restart_game" class="btn"><i class="fa-solid fa-rotate-right"></i></button> -->

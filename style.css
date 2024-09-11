@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#controls{
+  position: absolute;
+  left: 50%;
+  max-height: 95%;
+  translate: -50% 0;  
+  display: none;
+  max-width: 95%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  
+  gap:10px
+}
+
+.player{
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  border: 1px solid green;
+  padding: 5px;
+}
+
+.ammo{
+  color:white;
+  display: flex;
+  gap:20px
+}
+
+#canvas1{
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  left: 50%;
+  top: 70px;
+  translate: -50% 0;
+  max-height: 95%;
+  max-width: 95%;
+  display: none;
+  /* image-rendering: crisp-edges;
+  image-rendering: pixelated; */
+}
+body{
+  padding: 5px;
+}
+
+#main_img{
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  display: none;
+  left: 50%;
+  top: 70px;
+  translate: -50% 0;
+  /* max-height: 90%; */
+  max-width: 95%;
+  background-image: url('./images/tanks.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 16 / 9;
+}
+
+.assets{
+  display:none;
+}
+
+.btn{
+  border: none;  
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#start_game{
+  position: absolute;
+  left: 50%;
+  width: 80px;
+  height:80px;
+  border: 2px solid red;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 50%;
+  translate: -50% -50%;
+  font-size: 60px;
+  color: rgba(255, 0, 0, 0.8);
+  text-transform: uppercase;
+}
+
+#pause_game{
+  font-size: 32px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+
+/* <i class="fa-solid fa-circle-pause"></i> */
