@@ -4,7 +4,7 @@ movement - wsad/
 tower rotation - q,e/
 machine gun - r/
 cannon - t/
-## grenn Tank steering
+## green tank steering
 movement - arrows/
 tower rotation - 7,9/
 machine gun - numlock +/
